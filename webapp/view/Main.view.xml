@@ -1,0 +1,14 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="TestOdataSM10TestOdataSM10.controller.Main" displayBlock="true">
+	<App>
+		<pages>
+			<Page title="{i18n>title}" content="{/HorasSet}">
+				<content>
+				    <List noDataText="Drop list items here" id="__list0" items="{/HorasSet}">
+				        <items>
+				            <StandardListItem type="Navigation" title="{RecordId}" description="{ZzobjectId}{ZzproySra}" icon="sap-icon://picture" id="__item0"/></items>
+				    </List>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

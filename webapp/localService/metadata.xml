@@ -1,0 +1,36 @@
+<edmx:Edmx
+    xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx"
+    xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
+    xmlns:sap="http://www.sap.com/Protocols/SAPData" Version="1.0">
+    <edmx:DataServices m:DataServiceVersion="2.0">
+        <Schema
+            xmlns="http://schemas.microsoft.com/ado/2008/09/edm" Namespace="ZDDEL_SM10_SRV" xml:lang="en" sap:schema-version="1">
+            <EntityType Name="Horas" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="RecordId"/>
+                </Key>
+                <Property Name="RecordId" Type="Edm.Guid" Nullable="false" sap:label="Record ID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ZzobjectId" Type="Edm.String" Nullable="false" MaxLength="10" sap:label="Transaction No." sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="ZzproySra" Type="Edm.String" Nullable="false" MaxLength="10" sap:label="Project Name" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="Zzusuario" Type="Edm.String" Nullable="false" MaxLength="12" sap:label="User Name" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="ZzfImputacion" Type="Edm.DateTime" Nullable="false" Precision="7" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="Zzhora" Type="Edm.Time" Nullable="false" Precision="0" sap:label="Time" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ZzproyInt" Type="Edm.String" Nullable="false" MaxLength="10" sap:label="Project Name" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ZzcantHs" Type="Edm.Decimal" Nullable="false" Precision="10" Scale="2" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Zzdescripcion" Type="Edm.String" Nullable="false" MaxLength="50" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Zzfecha" Type="Edm.DateTime" Precision="7" sap:label="Date" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Zzdesvio" Type="Edm.Boolean" Nullable="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ZzflagHe" Type="Edm.Boolean" Nullable="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ZzdesdeHe" Type="Edm.Time" Nullable="false" Precision="0" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ZzhastaHe" Type="Edm.Time" Nullable="false" Precision="0" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <EntityContainer Name="ZDDEL_SM10_SRV_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx">
+                <EntitySet Name="HorasSet" EntityType="ZDDEL_SM10_SRV.Horas" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:searchable="true" sap:pageable="false" sap:content-version="1"/>
+            </EntityContainer>
+            <atom:link
+                xmlns:atom="http://www.w3.org/2005/Atom" rel="self" href="./sap/ZDDEL_SM10_SRV/$metadata"/>
+                <atom:link
+                    xmlns:atom="http://www.w3.org/2005/Atom" rel="latest-version" href="./sap/ZDDEL_SM10_SRV/$metadata"/>
+                </Schema>
+            </edmx:DataServices>
+        </edmx:Edmx>
