@@ -1,9 +1,10 @@
 sap.ui.define([
-	"sap/ui/core/mvc/Controller"
-], function(Controller) {
+	"sap/ui/core/mvc/Controller",
+	"./Formatter"
+], function(Controller, Formatter) {
 	"use strict";
 
-	return Controller.extend("TestOdataSM10TestOdataSM10.controller.Main", {
+	return Controller.extend("Zsm10.controller.Main", {
 
 	});
 });

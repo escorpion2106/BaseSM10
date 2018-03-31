@@ -1,7 +1,7 @@
 {
 	"_version": "1.5.0",
 	"sap.app": {
-		"id": "TestOdataSM10TestOdataSM10",
+		"id": "Zsm10",
 		"type": "application",
 		"i18n": "i18n/i18n.properties",
 		"applicationVersion": {
@@ -43,7 +43,7 @@
 	},
 	"sap.ui5": {
 		"rootView": {
-			"viewName": "TestOdataSM10TestOdataSM10.view.Main",
+			"viewName": "Zsm10.view.Main",
 			"type": "XML"
 		},
 		"dependencies": {
@@ -66,7 +66,7 @@
 			"i18n": {
 				"type": "sap.ui.model.resource.ResourceModel",
 				"settings": {
-					"bundleName": "TestOdataSM10TestOdataSM10.i18n.i18n"
+					"bundleName": "Zsm10.i18n.i18n"
 				}
 			},
 			"": {
