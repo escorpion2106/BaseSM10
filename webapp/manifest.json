@@ -84,6 +84,33 @@
 			"css": [{
 				"uri": "css/style.css"
 			}]
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"viewPath": "Zsm10.view",
+				"controlId": "app",
+				"transition": "slide",
+				"controlAggregation": "pages"
+			},
+			"routes": [{
+				"pattern": "",
+				"name": "Main",
+				"target": "Main"
+			}, {
+				"pattern": "Detalles",
+				"name": "Detalles",
+				"target": "Detalles"
+			}],
+			"targets": {
+				"Main": {
+					"viewName": "Main"
+				},
+				"Detalles": {
+					"viewName": "Detalles"
+				}
+			}
 		}
 	}
 }
