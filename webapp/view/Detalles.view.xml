@@ -5,6 +5,7 @@
 			<content>
 				<Label text="Label {RecordId}" width="100%" id="__label0"/>
 			</content>
+			
 		</Page>
 	</App>
 </mvc:View>

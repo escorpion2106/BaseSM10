@@ -1,5 +1,6 @@
 sap.ui.define([], function() {
 
+
 	"use_strict";
 
 	var Formatter = {

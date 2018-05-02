@@ -1,12 +1,30 @@
-<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
-	controllerName="Zsm10.controller.Main" displayBlock="true">
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core"
+	xmlns:fb="sap.ui.comp.filterbar" controllerName="Zsm10.controller.Main" displayBlock="true">
 	<App id="app">
 		<pages>
 			<Page title="{i18n>title}" showNavButton="true" navButtonPress="onNavBack">
 				<content>
-					<Table id="table_imputacion" growing="true" mode="SingleSelectMaster" selectionChange="click"
-						items="{ path: '/HorasSet'}">
-						<headerToolbar></headerToolbar>
+					<fb:FilterBar reset="onReset" search="onSearch" useToolbar="false" showGoOnFB="false">
+						<fb:filterItems>
+							<fb:FilterItem name="A" label="ZzobjectId">
+								<fb:control>
+									<Input id="i1" change="onSelectChange" ></Input>
+								</fb:control>
+							</fb:FilterItem>
+							<fb:FilterItem name="B" label="	ZzproySra">
+								<fb:control>
+								<Input id="i2" change="onSelectChange" ></Input>
+								</fb:control>
+							</fb:FilterItem>
+							<fb:FilterItem name="C" label="Zzusuario">
+								<fb:control>
+								<Input id="i3" change="onSelectChange" ></Input>
+								</fb:control>
+							</fb:FilterItem>
+						</fb:filterItems>
+					</fb:FilterBar>
+					<Table id="table_imputacion" growing="true" mode="SingleSelectMaster" selectionChange="click" items="{ path: '/HorasSet'}">
+						<headerToolbar/>
 						<columns>
 							<Column visible="false">
 								<Text text="RecordId"/>
