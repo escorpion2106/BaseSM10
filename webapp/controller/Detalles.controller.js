@@ -4,7 +4,6 @@ sap.ui.define([
 ], function(BaseController, Controller) {
 	"use strict";
 
-
 	return Controller.extend("Zsm10.controller.Detalles", {
 
 		/**

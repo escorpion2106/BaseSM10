@@ -1,7 +1,6 @@
 sap.ui.define([
 	"sap/ui/core/mvc/Controller",
 	"sap/ui/model/Filter",
-
 	"./BaseController"
 ], function(BaseController,Filter,Controller) {
 	"use strict";
