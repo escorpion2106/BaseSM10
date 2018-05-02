@@ -14,6 +14,7 @@ sap.ui.define(["sap/ui/core/mvc/Controller", "sap/ui/core/routing/History"], fun
 			} else {
 				this.getRouter().navTo("appHome", {}, true /*no history*/ );
 			}
+<<<<<<< Upstream, based on 26d2fc9827cdb3a18ce08a76c7ecaa6ca5257a1e
 
 		},
 
@@ -38,5 +39,8 @@ sap.ui.define(["sap/ui/core/mvc/Controller", "sap/ui/core/routing/History"], fun
 			setModel : function (oModel, sName) {
 				return this.getView().setModel(oModel, sName);
 			}		
+=======
+		}
+>>>>>>> 88d776e test3
 	});
 });
