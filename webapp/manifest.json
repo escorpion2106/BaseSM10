@@ -99,7 +99,7 @@
 				"name": "Main",
 				"target": "Main"
 			}, {
-				"pattern": "Detalles",
+				"pattern": "Detalles{algo}",
 				"name": "Detalles",
 				"target": "Detalles"
 			}],
@@ -113,5 +113,4 @@
 			}
 		}
 	}
-	
 }
