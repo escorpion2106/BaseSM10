@@ -4,7 +4,7 @@
 		<pages>
 			<Page title="{i18n>title}" showNavButton="true" navButtonPress="onNavBack">
 				<content>
-					<fb:FilterBar reset="onReset" search="onSearch" useToolbar="false" showGoOnFB="false">
+					<fb:FilterBar reset="onReset" search="onSearch" useToolbar="false" showGoButton="true" showFilterConfiguration="false">
 						<fb:filterItems>
 							<fb:FilterItem name="A" label="ZzobjectId">
 								<fb:control>
