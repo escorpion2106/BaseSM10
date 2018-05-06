@@ -4,6 +4,37 @@
 		<Page title="Title Detalle" showNavButton="true" navButtonPress="onNavBack">
 			<content>
 				<Label text="Label {RecordId}" width="100%" id="__label0"/>
+				<Table id="table_imputacion" growing="true" mode="SingleSelectMaster" selectionChange="click" items="{ path: '/HorasSet'}">
+					<headerToolbar/>
+					<columns>
+						<Column visible="false">
+							<Text text="RecordId"/>
+						</Column>
+						<Column>
+							<Text text="ZzobjectId"/>
+						</Column>
+						<Column>
+							<Text text="ZzproySra"/>
+						</Column>
+						<Column>
+							<Text text="Zzusuario"/>
+						</Column>
+						<Column>
+							<Text text="ZzfImputacion"/>
+						</Column>
+					</columns>
+					<items>
+						<ColumnListItem>
+							<cells>
+								<Text text="{RecordId}"/>
+								<Text text="{ZzobjectId}"/>
+								<Text text="{ZzproySra}"/>
+								<Text text="{Zzusuario}"/>
+								<Text text="{ path : 'ZzfImputacion', type: 'sap.ui.model.type.DateTime', formatOptions: { style : 'medium'}}"/>
+							</cells>
+						</ColumnListItem>
+					</items>
+				</Table>
 			</content>
 		</Page>
 	</App>

@@ -15,6 +15,7 @@ sap.ui.define(["sap/ui/core/mvc/Controller", "sap/ui/core/routing/History"], fun
 				this.getRouter().navTo("appHome", {}, true /*no history*/ );
 			}
 <<<<<<< Upstream, based on 26d2fc9827cdb3a18ce08a76c7ecaa6ca5257a1e
+<<<<<<< Upstream, based on 26d2fc9827cdb3a18ce08a76c7ecaa6ca5257a1e
 
 		},
 
@@ -42,5 +43,31 @@ sap.ui.define(["sap/ui/core/mvc/Controller", "sap/ui/core/routing/History"], fun
 =======
 		}
 >>>>>>> 88d776e test3
+=======
+
+		},
+
+		/**
+		 * Convenience method for getting the view model by name in every controller of the application.
+		 * @public
+		 * @param {string} sName the model name
+		 * @returns {sap.ui.model.Model} the model instance
+		 */
+		getModel: function(sName) {
+			return this.getView().getModel(sName);
+		},
+		
+		
+			/**
+			 * Convenience method for setting the view model in every controller of the application.
+			 * @public
+			 * @param {sap.ui.model.Model} oModel the model instance
+			 * @param {string} sName the model name
+			 * @returns {sap.ui.mvc.View} the view instance
+			 */
+			setModel : function (oModel, sName) {
+				return this.getView().setModel(oModel, sName);
+			}		
+>>>>>>> 68206c9 asd
 	});
 });
